@@ -1,0 +1,10 @@
+.fc .fc-timegrid-slot {
+  height: 6.5em;
+  border-bottom: 0;
+}
+
+.fc-slats td
+{
+  height: 10px !important;
+  font-size: 8px !important;
+}

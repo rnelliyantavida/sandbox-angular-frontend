@@ -1,0 +1,35 @@
+<h2>NYC Health</h2>
+<body>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">About NYC</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</body>
+<p-button (click)="displayModalDialog()"
+	icon="pi pi-external-link" label="Add Nurse details">
+</p-button>
+<p-dialog header="Add details"
+	[(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}"
+	[draggable]="true" [resizable]="100" [baseZIndex]="10000">
+  <form method="post">
+    Nurse Name:
+      <input id="float-input" type="text" placeholder="Enter your name"> 
+    Nurse Address:
+      <input id="float-input" type="text" placeholder="Enter your Address">
+    Nurse Email:
+      <input id="float-input" type="text" placeholder="Enter your ID">
+    Nurse Contact Info:
+      <input id="float-input" type="text" placeholder="Enter your Mobile Number">
+      
+    Male:
+      <input type="radio" name="gender" Value="Male">
+    Female:
+      <input type="radio" name="gender" Value="Female">
+   </form>
+
+  <p-button label="Submit" icon="pi pi-check"></p-button>
+  <p-button label="Cancel" icon="pi pi-check"></p-button>
+</p-dialog>
+

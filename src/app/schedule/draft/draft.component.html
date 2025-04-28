@@ -1,0 +1,22 @@
+<p-toolbar>
+  <div class="p-toolbar-group-left">
+    <label>Draft Schedule</label>
+  </div>
+  <div class="p-toolbar-group-right">
+    <label>Vishakha Kumar</label>
+  </div>
+</p-toolbar>
+<br><br>
+
+<full-calendar [options]="options" label="add nurse" class="fc fc-timegrid-slot "></full-calendar>
+
+<p-dialog [(visible)]="productDialog" header="Add Nurse" appendTo ="body" styleClass="p-fluid">
+  <ng-template pTemplate="content">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" pInputText id="name" required autofocus />
+      <small class="p-error" >Name is required.</small>
+    </div>
+  </ng-template>
+</p-dialog>
+

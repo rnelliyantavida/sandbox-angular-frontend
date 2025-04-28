@@ -1,0 +1,84 @@
+h4{
+    color: blue;
+}
+h2{
+    background-color:yellowgreen;
+    padding: 15px;
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+}
+form{
+    width: 500;
+   display:inline;
+   align-items: center;
+   height: 300px;
+   position: static;
+}
+input{
+    width: 100%;
+    display: flex;
+
+    flex-flow: row wrap;
+    align-items: center;
+
+
+}
+input:focus, textarea:focus{
+    outline:blue;
+    border: 1px solid rgba(255,0,0,0.5);
+    box-shadow: 0 0 4px rgba(255,0,0,0.5);
+}
+::placeholder{
+    color:red;
+    opacity:1;
+}
+* {
+margin: 10px;;
+padding:10;    
+}
+ul{
+
+
+}
+ul li {
+    list-style:none;
+    display: inline-block;
+    line-height: 100px;
+}
+ul li a {
+    text-decoration: none;
+    font-family: arial;
+    color:black;
+    font-size: 14px;
+    padding: 0 20px;
+    display: block;
+}
+ul li a:hover {
+    color:red;
+}
+
+nav{
+    width:50%;
+    height: 50px;
+    background-color: #fff;
+}
+body{
+    background-color: grey;
+}
+table{
+    width: 400px;
+}
+tr{
+    text-align: left;
+}
+table,tr{
+    border: 1px solid #000;
+}
+p-dialog{
+    background-color: white;
+}
+p-button{
+    font-size: large;
+    padding: 0.5em 1em;
+}

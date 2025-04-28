@@ -1,0 +1,52 @@
+<br><br><br>
+<div class="card">
+ <!-- <p-splitter [style]="{'height': '40px'}" [panelSizes]="[90,10]" layout="horizontal">-->
+    <p-toolbar styleClass="p-mb-2">
+    <ng-template pTemplate="left" >
+      <label class="">Clinics list</label>
+    </ng-template>
+    <ng-template pTemplate="right">
+      <button pButton pRipple label="Add Clinic" icon="pi pi-plus-circle" class="p-button-secondary"
+              (click)="gotoList()" ></button>
+    </ng-template>
+      </p-toolbar>
+  <!--</p-splitter>-->
+
+  <br><br><br>
+  <p-table responsiveLayout="scroll"  styleClass="p-datatable-gridlines" [value]="[[]]" >
+
+    <ng-template pTemplate="header">
+      <tr styleClass="header">
+        <th pSortableColumn="clinicId">ID<p-sortIcon field="id"></p-sortIcon></th>
+        <th pSortableColumn="clinicName">Clinic Name<p-sortIcon field="name"></p-sortIcon></th>
+        <th pSortableColumn="Address">Address <p-sortIcon field="Address"></p-sortIcon></th>
+        <th >Actions </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body">
+
+      <tr *ngFor="let clinic of clinics; let i=index;">
+        <td>{{ clinic.id }}</td>
+        <td>{{ clinic.clinicName }}</td>
+        <td>{{ clinic.clinicAddress }}</td>
+        <td>
+          <button id='edit' pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="onEditClinic(clinic,i)"></button>
+          <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="onDeleteClinic(clinic.id)"></button>
+        </td>
+      </tr>
+    </ng-template>
+
+   <p-dialog [(visible)]="productDialog" header="Add Clinic" appendTo ="body" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <div class="field">
+          <label for="name">Nurse Name</label>
+          <input type="text" pInputText id="name" required autofocus />
+          <small class="p-error" >Name is required.</small>
+        </div>
+        </ng-template>
+    </p-dialog>
+
+
+  </p-table>
+
+  </div>
