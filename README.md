@@ -1,27 +1,41 @@
-# SandboxGDIATrainingFrontendV1
+# 🏗️ Sandbox Angular Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+A lightweight Angular frontend application designed as a playground to experiment with Angular features, UI components, routing, and testing. This sandbox project is ideal for learning, prototyping, and testing Angular concepts in an isolated environment.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+- Modular Angular application structure  
+- Demonstrates Angular routing with multiple components  
+- Includes sample UI components showcasing Angular bindings, event handling, and directives  
+- Uses Angular forms and basic state management techniques  
+- Unit testing with **Jasmine** and test runner **Karma**  
+- Easy to extend and customize for your Angular experiments  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular (latest stable version)  
+- TypeScript  
+- HTML5 & CSS3  
+- Angular CLI  
+- **Testing:** Jasmine, Karma  
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📦 Getting Started
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Node.js (v14+ recommended)  
+- Angular CLI installed globally (`npm install -g @angular/cli`)  
 
-## Further help
+### Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/rnelliyantavida/sandbox-angular-frontend.git
+   cd sandbox-angular-frontend
